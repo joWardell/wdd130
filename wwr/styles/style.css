@@ -1,0 +1,116 @@
+/* Setting max-width for all pages*/
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/*take the underline off with the text-decoration property and set it to a
+ value of none. We will also add the underline value to a hover as well.*/
+
+nav a {
+    text-align: center;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+#hero-msg h1,
+#hero-msg h4 {
+    text-align: center;
+}
+
+.button-box {
+    text-align: center;
+}
+
+main section {
+    text-align: center;
+    /*targeting the new div with the id of background declaring height: px */
+}
+
+#background {
+    height: 725px;
+}
+
+/*backgound-color property will set background color of element*/
+/* change the values below to your colors from your palette 
+  my color pallet orange pantone ff5400 orange peel ff9e00
+  pacific blue 00b4d8 dark cornflower 023e8a midnight blue 03045e*/
+body {
+    background-color: #03045e;
+    color: whitesmoke;
+}
+
+header {
+    background-color: #03045e;
+}
+
+nav a:hover {
+    background-color: #ff9e00;
+    color: #03045e;
+}
+
+.book, 
+.join {
+    background-color: whitesmoke;
+    color: #ff5400;
+    text-decoration: none;
+}
+
+.book:hover,
+.join:hover {
+    background-color: #ff9e00;
+    color: #03045e;
+}
+
+#background {
+    background-color: #03045e;
+}
+
+.msg {
+    background-color: whitesmoke;
+}
+
+footer {
+    background-color: #03045e;
+    color: #00b4d8;
+}
+
+/* Use the color property for the text. 
+The color property always refers to the font color.
+ If any selector already has a rule-set, just add 
+ the color declaration to it. Don't start a new rule-set.*/
+.msg h2 {
+    color: #ff5400;
+}
+
+.msg p {
+    color: #03045e;
+}
+
+footer h3 {
+    color: #00b4d8;
+    text-decoration: underline;
+}
+
+footer a {
+    color: #00b4d8;
+    text-decoration: none;
+}
+/*Add the text-decoration property with a value of underline to the 
+following selectors:footer h3 a:hover*/
+
+footer a:hover {
+    background-color: #ff9e00;
+    color: #03045e;
+    text-decoration: underline;
+
+}
+
+/* Add a Few Widths */
+.logo,.icon {
+    width: 80px;
+}
+
+#hero-img {
+    width: 100%;
+}
