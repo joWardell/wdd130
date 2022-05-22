@@ -2,7 +2,10 @@
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a | */
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Open+Sans&family=PT+Serif:wght@700&family=Quicksand&family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Open+Sans&family=Roboto&display=swap');
+
+/* changed out url('https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Open+Sans&family=PT+Serif:wght@700&family=Quicksand&family=Roboto&display=swap');*/
 
 :root {
   /* change the values below to your colors from your palette 
@@ -14,7 +17,7 @@ Fonts are separated by a | */
   --accent2-color: #ff5400 ;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "Quicksand";
+  --heading-font: "Gochi Hand";
   --paragraph-font: Roboto, Helvetica, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
@@ -38,6 +41,7 @@ body {
   padding: 4em;
   font-size: 18px;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 img {
   display: block;
