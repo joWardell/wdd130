@@ -249,6 +249,95 @@ footer.social img {
 #hero-img {
     width: 100%;
 }
+
+/* PAGE TWO CSS BEGINS HERE */
+
+.left {
+    float: left;
+    width: 33%;
+    margin-left: 30px;
+}
+
+.right{
+    float: right;
+    width: 60%;
+    margin-right: 30px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.registration:hover {
+    background-color: #ff5400;
+    color: whitesmoke;
+}
+.registration {
+background-color: #ff9e00;
+color: #03045e;
+text-decoration: none;
+font-size: 18px;
+padding: 15px 30px;
+margin-top: 50px;
+border-radius: 5px;
+position: absolute;
+  left: 1000px;
+  top: 610px;
+}
+.art-camp h3, .schedule h3, .staff h3 {
+    background-color: whitesmoke;
+    color: #ff5400;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 15px 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 3px solid #023e8a;
+}
+
+.art-text, .weekly-list, .instructors {
+    background-color: whitesmoke;
+    color: #03045e;
+    font-size: 18px;
+    padding: 30px;
+    border: 3px solid #023e8a;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.art-text {
+    text-align: left;
+    margin-bottom: 1em;
+}
+.weekly-list {
+    text-align: left;
+    padding-left: 60px;
+}
+
+.instructors {
+    text-align: left;
+}
+.ceramics .art-table {
+    border: 3px solid #023e8a;
+    /*box-shadow: 5px 5px 10px #ff5400; */
+}
+
+.art-table {
+    border: 3px solid #023e8a;
+    /*box-shadow: 5px 5px 10px #ff5400; */
+    margin-top: 20px;
+
+}
+
+.ceramics1 {
+    max-width: 440px;
+    border: 3px solid #023e8a;
+
+}
+
 /* For example, we can make our page responsive by adding a media query to it. 
 Copy and paste the following to the bottom of your CSS:
 ~ Media queries always need to be after all the other CSS. 
