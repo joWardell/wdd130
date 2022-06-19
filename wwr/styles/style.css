@@ -62,18 +62,21 @@ nav a {
     grid-row: 1/2;
     margin-top: 100px;
 }
+
 /*creative adventures*/
 #hero-msg h1 {
-    
+
     text-align: center;
     font-size: 3.75em;
 }
+
 /*make memories...*/
 #hero-msg h4 {
     text-align: center;
     color: white;
 
 }
+
 /*book your tykes aventure*/
 .button-box {
     text-align: center;
@@ -87,6 +90,7 @@ main section {
 main section img {
     box-sizing: border-box;
 }
+
 /* change the values below to your colors from your palette 
   my color pallet orange pantone ff5400 orange peel ff9e00
   pacific blue 00b4d8 dark cornflower 023e8a midnight blue 03045e*/
@@ -124,16 +128,19 @@ nav a:hover {
     margin-top: 50px;
     border-radius: 5px;
 }
+
 .home-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     margin-top: 50px;
- }
- #background {
+}
+
+#background {
     height: 725px;
     grid-column: 1/11;
     grid-row: 4/9;
 }
+
 /*backgound-color property will set background color of element*/
 
 .card-img {
@@ -142,26 +149,30 @@ nav a:hover {
     transition: transform .5s;
     box-shadow: 5px 5px 10px #ff5400;
 }
+
 .card-img:hover {
     opacity: .6;
     transform: scale(1.1);
 }
+
 .swim-card {
     /*margin: 200px;*/
     grid-column: 2/4;
     grid-row: 2/3;
-  }
+}
 
 .art-card {
     /*margin: 200px;*/
     grid-column: 5/7;
     grid-row: 2/3;
 }
+
 .rapids-card {
     /*margin: 200px;*/
     grid-column: 8/10;
     grid-row: 2/3;
 }
+
 .mountains {
     border: 3px solid #0096c7;
     width: 100%;
@@ -218,6 +229,7 @@ footer h3 {
     color: #00b4d8;
     text-decoration: none;
 }
+
 footer a {
     color: #00b4d8;
     text-decoration: none;
@@ -258,7 +270,7 @@ footer.social img {
     margin-left: 30px;
 }
 
-.right{
+.right {
     float: right;
     width: 60%;
     margin-right: 30px;
@@ -269,34 +281,42 @@ footer.social img {
     display: table;
     clear: both;
 }
+
 .registration:hover {
     background-color: #ff5400;
     color: whitesmoke;
 }
+
 .registration {
-background-color: #ff9e00;
-color: #03045e;
-text-decoration: none;
-font-size: 18px;
-padding: 15px 30px;
-margin-top: 50px;
-border-radius: 5px;
-position: absolute;
-  left: 1000px;
-  top: 610px;
+    background-color: #ff9e00;
+    color: #03045e;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    position: relative; 
+    margin-left: 500px;
+    margin-bottom: 110px;
 }
-.art-camp h3, .schedule h3, .staff h3 {
+
+.art-camp h3,
+.schedule h3,
+.staff h3 {
     background-color: whitesmoke;
     color: #ff5400;
     text-decoration: none;
     font-size: 24px;
     padding: 15px 30px;
     margin-top: 20px;
+    margin-bottom: 5px;
     border-radius: 5px;
     border: 3px solid #023e8a;
+    box-shadow: 6px 6px 12px #ff5400;
 }
 
-.art-text, .weekly-list, .instructors {
+.art-text,
+.weekly-list,
+.instructors {
     background-color: whitesmoke;
     color: #03045e;
     font-size: 18px;
@@ -312,6 +332,7 @@ ul {
     text-align: left;
     margin-bottom: 1em;
 }
+
 .weekly-list {
     text-align: left;
     padding-left: 60px;
@@ -320,6 +341,7 @@ ul {
 .instructors {
     text-align: left;
 }
+
 .ceramics .art-table {
     border: 3px solid #023e8a;
     /*box-shadow: 5px 5px 10px #ff5400; */
@@ -327,15 +349,12 @@ ul {
 
 .art-table {
     border: 3px solid #023e8a;
-    /*box-shadow: 5px 5px 10px #ff5400; */
     margin-top: 20px;
-
 }
 
 .ceramics1 {
     max-width: 440px;
     border: 3px solid #023e8a;
-
 }
 
 /* For example, we can make our page responsive by adding a media query to it. 
@@ -344,44 +363,64 @@ Copy and paste the following to the bottom of your CSS:
 ~ Don't add any CSS after the media query later either.*/
 
 @media screen and (max-width: 900px) {
-    #hero, .home-grid {
+
+    #hero,
+    .home-grid {
         display: block;
         height: auto;
     }
-    nav, footer {
+
+    nav,
+    footer {
         flex-direction: column;
     }
+
     nav a {
         display: block;
         padding: 15px;
     }
+
     #hero {
         margin-top: 0;
     }
+
     #hero-msg {
         margin-top: 0;
     }
+
     #hero-msg h4 {
         display: none;
     }
+
     .home-title {
         font-size: 25px;
         color: white;
     }
-    .rivers-card, .camping-card, .rapids-card { 
+
+    .rivers-card,
+    .camping-card,
+    .rapids-card {
         margin: 50px auto;
         width: 60%;
     }
+
     #background {
         display: none;
     }
-    .mountains, .msg {
+
+    .mountains,
+    .msg {
         width: 80%;
         display: block;
         margin: 0 auto;
     }
+
+    /* page two stuff */
+    .column {
+        width: 100%;
+    }
+
     footer {
         margin-top: 25px;
     }
 }
-            
