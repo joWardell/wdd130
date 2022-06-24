@@ -294,7 +294,7 @@ footer.social img {
     font-size: 18px;
     padding: 15px 30px;
     border-radius: 5px;
-    position: relative; 
+    position: relative;
     margin-left: 500px;
     margin-bottom: 110px;
 }
@@ -355,6 +355,22 @@ ul {
 .ceramics1 {
     max-width: 440px;
     border: 3px solid #023e8a;
+}
+
+/* page three - contact us stuff */
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 5em;
+    /* make this element invisible until we are ready for it */
+    display: none;
+}
+
+.moveDown {
+    margin-top: 3em;
 }
 
 /* For example, we can make our page responsive by adding a media query to it. 
