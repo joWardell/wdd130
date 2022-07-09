@@ -87,7 +87,7 @@ header {
     color: white;
 }
 
-#welcome-msg, #eandc {
+#welcome-msg, #courses-events {
     font-family: 'Lato', sans-serif;
     font-size: 1em;
     margin-top: 0;
@@ -184,7 +184,7 @@ footer a:hover {
     color: white;
     padding: 30px;
 }
-/*Events and Courses page */
+/*Courses and Events page */
 
 .event1 {
   font-size: 18px;
@@ -197,13 +197,16 @@ footer a:hover {
 
 /*Calendar - needs improvements but a start! */
 
-* {box-sizing: border-box;}
+.calendar {
+  box-sizing: border-box;
+  margin: 0px 100px;
+}
 ul {list-style-type: none;}
 body {font-family: 'Lato', sans-serif;}
 
 .month {
-  padding: 50px 25px;
-  width: 100%;
+  padding: 70px 25px;
+  width: 95.8%;
   background: #00858f;
   text-align: center;
 }
@@ -244,7 +247,7 @@ body {font-family: 'Lato', sans-serif;}
 }
 
 .days {
-  padding: 10px 0;
+  padding: 16px 0;
   background: #1f1f1f;
   margin: 0;
 }
