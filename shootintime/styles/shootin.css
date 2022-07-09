@@ -262,7 +262,7 @@ body {font-family: 'Lato', sans-serif;}
 .days li .active {
   padding: 5px;
   background: #00858f;
-  color: white !important
+  color: white;
 }
 
 
