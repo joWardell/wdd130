@@ -50,7 +50,6 @@ font-family: 'Raleway', sans-serif; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 40%;
-  
 
 }
 
@@ -107,8 +106,10 @@ header {
   margin-top: 20px;
 }
 
+/* page 1  organization*/
 #welcome-msg,
-#courses-events {
+#courses-events,
+#m-gunsmith {
   font-family: 'Lato', sans-serif;
   font-size: 1em;
   margin-top: 0;
@@ -138,6 +139,10 @@ header {
   margin-bottom: 0%;
   padding: 15px 30px 30px 60px;
   background-color: white;
+}
+
+.forms {
+  border: 6px groove #dad6d6;
 }
 
 /* main picture*/
@@ -170,12 +175,14 @@ header {
   font-size: 20px;
   background-color: white;
   padding: 15px 30px 30px 60px;
+  border: 6px groove #dad6d6;
 }
 
 .range-rules ol {
   font-size: 20px;
   padding: 15px 30px 30px 60px;
   background-color: white;
+  border: 6px groove #dad6d6;
 }
 
 h2 {
@@ -186,6 +193,10 @@ h2 {
   text-align: center;
   background-color: #dad6d6;
 }
+
+/* end page 1 index main*/
+
+/* footer begins here */
 
 footer {
   font-size: 20px;
@@ -207,7 +218,9 @@ footer a:hover {
   padding: 30px;
 }
 
-/*Courses and Events page */
+/* footer ends here */
+
+/*Courses and Events page begins */
 
 .event1 {
   font-size: 18px;
@@ -216,6 +229,7 @@ footer a:hover {
   margin: 0px 300px 50px 300px;
   padding: 30px 60px 30px 60px;
   text-align: left;
+  border: 6px groove #dad6d6;
 }
 
 /*Calendar - needs improvements but a start! */
@@ -306,9 +320,157 @@ body {
   color: white;
 }
 
+/* end of calendar and events page*/
 
+/* proshop - gunsmith page begins here */
 
+.proshop-grid {
+  display: grid;
+  max-width: 1400px;
+  grid-template-columns: repeat(9 1fr);
+}
 
+.gun-repair {
+  border: 2.5px groove #1f1f1f;
+  width: 99.5%;
+  grid-column: 1/10;
+  grid-row: 1/8;
+}
+
+.fflicense {
+  padding: 5px;
+  grid-column: 7/9;
+  grid-row: 2/3;
+  z-index: 1;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  line-height: 1.3;
+  margin-top: 0;
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: #89010c;
+  color: white;
+  border: 8px groove #dad6d6;
+}
+
+.fflicense p {
+  line-height: 1.3;
+}
+
+.fflicense a:hover {
+  background-color: #00858f;
+  color: white;
+}
+
+.fflicense a:visited {
+  color: #dad6d6
+}
+
+#m-gunsmith {
+  margin-top: 45px;
+}
+
+.gun-grid {
+  display: grid;
+  max-width: 1400px;
+  grid-template-columns: repeat(4 1fr);
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.glock {
+  border: 6px groove #dad6d6;
+  margin: 30px 30px 0px 60px;
+  grid-column: 1/3;
+  grid-row: 4/5;
+
+}
+
+.weapons-five {
+  border: 6px groove #dad6d6;
+  margin: 30px 60px 0px 30px;
+  grid-column: 5/7;
+  grid-row: 4/5;
+}
+
+.schmootzie {
+  margin: 30px;
+  grid-column: 3/5;
+  grid-row: 4/7;
+  font-size: 18px;
+  line-height: 1.3;
+  background-color: white;
+  color: #1f1f1f;
+  padding: 30px 60px 30px 60px;
+  text-align: left;
+  border: 6px groove #dad6d6;
+}
+
+.schmootzie h1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  margin-top: 0;
+  color: #00858f;
+  text-align: center;
+  background-color: #f7f4f3;
+}
+
+.derringer {
+  border: 6px groove #dad6d6;
+  margin: 30px 60px 0px 30px;
+  grid-column: 5/7;
+  grid-row: 5/6;
+}
+
+.collect {
+  border: 6px groove #dad6d6;
+  margin: 30px 30px 0px 60px;
+  grid-column: 1/3;
+  grid-row: 5/6;
+}
+
+.pro-hours {
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  grid-row: repeat (7 1fr);
+}
+
+.pro-hours h2 { 
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin: 60px 60px 20px 60px;
+}
+
+.shop-hours {
+  font-family: 'Lato', sans-serif;
+  font-size: 28px;
+  margin: 0px 60px 0px 60px;
+  text-align: left;
+  line-height: 1.75;
+  background-color: #89010c;
+  color: white;
+  border: 6px groove #dad6d6;
+  grid-column: 1/2;
+  grid-row: 2/4;
+}
+
+.shop-hours a:hover {
+  background-color: #00858f;
+  color: white;
+ }
+
+.shop-hours a:visited {
+  color: #dad6d6
+}
+.rough-rider {
+  grid-column: 2/3;
+  grid-row: 1/8;
+  width: 87%;
+  border: 6px groove #dad6d6;
+  margin: 115px 30px 0px 0px;
+
+}
+/* proshop - gunsmith page ends here */
 
 
 
