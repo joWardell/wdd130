@@ -40,10 +40,28 @@
             </div>
 
         </header>
-        <!--There may be changes as I self-edit a lot. -->
+        <!--https://www.w3schools.com/howto/howto_css_responsive_form.asp  I just couldn't understand it so used
+        the cut and paste from the wwr assignment. Best I could do. -->
         <main>
-            <h1><strong>Contact Us is coming soon! We are currently<br>
-                UNDER CONSTRUCTION</strong></h1">
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+                    <li>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name">
+                    </li>
+                    <li>
+                        <label for="mail">E-mail:</label>
+                        <input type="email" id="mail" name="user_email">
+                    </li>
+                    <li>
+                        <label for="msg">Message:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </li>
+                    <li class="button">
+                        <button type="submit">Send your message</button>
+                    </li>
+                </ul>
+            </form>
         </main>
 
         <footer>
@@ -68,8 +86,28 @@
             </div>
         </footer>
 
-
     </div>
+    <div id="feedback">
+    </div>
+    <!--Finally, below the elements in the body, right before the ending body tag, add this code: -->
+    <script>
+        //get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        //get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens
+        formElement.addEventListener('submit', function (e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value +
+                '! Thank you for sending us a message.  Shootin\' Time will respond to you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
 </body>
 
 </html>
